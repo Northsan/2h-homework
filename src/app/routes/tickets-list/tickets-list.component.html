@@ -6,6 +6,11 @@
          <div class="postit yellow" *ngFor="let ticket of tickets">
             <div class="postit-title">Ticket #{{ ticket?.id }}</div>
             <div>{{ ticket.description }}</div>
+            <div class="postit-bottom">
+               <a [routerLink]="['/ticket-details', ticket.id]">
+                  View more
+               </a>
+            </div>
          </div>
       </ng-container>
       <ng-template #elseTemplate>

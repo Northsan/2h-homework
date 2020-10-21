@@ -1,0 +1,25 @@
+<div class="row">
+   <ng-container *ngIf="!hasErrorMsg() && ticket !== undefined;">
+      <div class="postit yellow">
+         <div class="postit-title">Ticket #{{ ticket?.id }}</div>
+         <div>{{ ticket?.description }}</div>
+
+         <div>Assigned to : {{ user?.name }}</div>
+
+         <div class="row">
+            Completed ?
+            <ng-container *ngIf="ticket?.completed; else notCompleted">
+               <img src="assets/check-mark.svg" alt="Check mark for completed task" />
+            </ng-container>
+            <ng-template #notCompleted>
+               <img src="assets/no-check.svg" alt="No check mark for uncompleted task" />
+            </ng-template>
+         </div>
+      </div>
+   </ng-container>
+   <ng-container *ngIf="hasErrorMsg()">
+      <div class="postit red">
+         {{ errorMsg }}
+      </div>
+   </ng-container>
+</div>

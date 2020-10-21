@@ -7,12 +7,14 @@ import { BackendService } from './backend.service';
 import { LayoutsModule } from './layouts/layouts.module';
 import { HomeComponent } from './routes/home/home.component';
 import { TicketsListComponent } from './routes/tickets-list/tickets-list.component';
+import { TicketDetailsComponent } from './routes/ticket-details/ticket-details.component';
 
 @NgModule({
    declarations: [
       AppComponent,
       HomeComponent,
-      TicketsListComponent
+      TicketsListComponent,
+      TicketDetailsComponent
    ],
    imports: [
       BrowserModule,
