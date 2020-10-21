@@ -1,12 +1,15 @@
 <div class="row">
+   <button routerLink="/">Back</button>
+</div>
+<div class="row">
    <ng-container *ngIf="!hasErrorMsg() && ticket !== undefined;">
       <div class="postit yellow">
          <div class="postit-title">Ticket #{{ ticket?.id }}</div>
          <div>{{ ticket?.description }}</div>
 
-         <div>Assigned to : {{ user?.name }}</div>
+         <div class="margin-top">Assigned to : {{ user?.name }}</div>
 
-         <div class="row">
+         <div class="row margin-top">
             Completed ?
             <ng-container *ngIf="ticket?.completed; else notCompleted">
                <img src="assets/check-mark.svg" alt="Check mark for completed task" />

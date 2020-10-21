@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+button {
+   padding: 0.5em 1em;
+   font-size: 0.75em;
+}
+
 /* CSS for post-it style */
 .postit-title {
    font-weight: bold;
