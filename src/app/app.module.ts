@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BackendService } from './backend.service';
 import { LayoutsModule } from './layouts/layouts.module';
+import { HomeComponent } from './routes/home/home.component';
 
 @NgModule({
    declarations: [
-      AppComponent
+      AppComponent,
+      HomeComponent
    ],
    imports: [
       BrowserModule,
