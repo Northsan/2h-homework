@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BackendService } from './backend.service';
+import { LayoutsModule } from './layouts/layouts.module';
 
 @NgModule({
    declarations: [
@@ -11,7 +12,8 @@ import { BackendService } from './backend.service';
    ],
    imports: [
       BrowserModule,
-      AppRoutingModule
+      AppRoutingModule,
+      LayoutsModule
    ],
    providers: [
       BackendService
