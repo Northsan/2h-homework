@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { BackendService } from './backend.service';
 import { LayoutsModule } from './layouts/layouts.module';
 import { HomeComponent } from './routes/home/home.component';
+import { TicketsListComponent } from './routes/tickets-list/tickets-list.component';
 
 @NgModule({
    declarations: [
       AppComponent,
-      HomeComponent
+      HomeComponent,
+      TicketsListComponent
    ],
    imports: [
       BrowserModule,

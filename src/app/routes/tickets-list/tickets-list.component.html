@@ -1,0 +1,17 @@
+<div class="center">
+   <h2>Tickets</h2>
+
+   <div class="row">
+      <ng-container *ngIf="!hasErrorMsg(); else elseTemplate">
+         <div class="postit yellow" *ngFor="let ticket of tickets">
+            <div class="postit-title">Ticket #{{ ticket?.id }}</div>
+            <div>{{ ticket.description }}</div>
+         </div>
+      </ng-container>
+      <ng-template #elseTemplate>
+         <div class="postit red">
+            {{ errorMsg }}
+         </div>
+      </ng-template>
+   </div>
+</div>
