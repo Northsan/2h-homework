@@ -10,5 +10,5 @@ import { BackendService } from './backend.service';
    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   constructor(private readonly backendService: BackendService) { }
+   constructor() { }
 }
